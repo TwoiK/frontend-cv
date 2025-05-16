@@ -59,7 +59,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         setToken(storedToken);
         
         // Fetch user data
-        const response = await fetch('http://localhost:5000/api/users/current', {
+        const response = await fetch('https://cvapi.dearsirhometuition.com/api/users/current', {
           headers: {
             'Authorization': storedToken
           },
