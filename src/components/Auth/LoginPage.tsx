@@ -22,7 +22,7 @@ const LoginPage: React.FC = () => {
     // Create a form element
     const form = document.createElement('form');
     form.method = 'GET';
-    form.action = 'https://cvapi.dearsirh0ometuition.com/api/auth/google';
+    form.action = 'https://cvapi.dearsirhometuition.com/api/auth/google';
     form.target = '_self';
     
     // Append to body and submit
