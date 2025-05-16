@@ -33,7 +33,7 @@ const RegisterPage: React.FC = () => {
   };
 
   const handleGoogleLogin = () => {
-    window.location.href = 'https://cvapi.dearsirh0ometuition.com/api/auth/google';
+    window.location.href = 'https://cvapi.dearsirhometuition.com/api/auth/google';
   };
 
   return (
