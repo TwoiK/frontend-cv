@@ -95,7 +95,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setLoading(true);
       setError(null);
       
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('https://cvapi.dearsirhometuition.com/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -115,7 +115,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setToken(data.token);
 
       // Fetch user data
-      const userResponse = await fetch('http://localhost:5000/api/users/current', {
+      const userResponse = await fetch('https://cvapi.dearsirhometuition.com/api/users/current', {
         headers: {
           'Authorization': data.token
         },
@@ -141,7 +141,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
       setLoading(true);
       setError(null);
       
-      const response = await fetch('http://localhost:5000/api/users/register', {
+      const response = await fetch('https://cvapi.dearsirhometuition.com/api/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
